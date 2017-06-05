@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backdrop_details"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            tools:context=".Details"
+            android:background="#212121">
+
+            <ImageView
+                android:id="@+id/poster_details"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="#212121"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/poster_details"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:background="#212121">
+
+                <TextView
+                    android:id="@+id/title_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/white"
+
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/release_date_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/rate_star"/>
+
+            <TextView
+                android:id="@+id/vote_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:textColor="#424242" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

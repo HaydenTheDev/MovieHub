@@ -49,13 +49,13 @@ public class FetchTask extends AsyncTask<String, Void, ArrayList<MovieDetails>> 
 
 
         try {
-            final String MOVIE_URL = "http://www.imdb.com/chart/top";
-            final String PARAM_QUERY = "m";
+            final String MOVIE_URL = "https://api.themoviedb.org/3/movie/550?";
+            final String APPID_PARAM = "api_key";
 
             Uri builtUri =
                     Uri.parse(MOVIE_URL).buildUpon()
                             .appendPath(sort)
-                            .appendQueryParameter(PARAM_QUERY, movieSearchQuery)
+                            .appendQueryParameter(APPID_PARAM, BuildConfig.)
                             .build();
 
             URL url = new URL(builtUri.toString());

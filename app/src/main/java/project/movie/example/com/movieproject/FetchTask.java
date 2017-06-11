@@ -55,7 +55,7 @@ public class FetchTask extends AsyncTask<String, Void, ArrayList<MovieDetails>> 
             Uri builtUri =
                     Uri.parse(MOVIE_URL).buildUpon()
                             .appendPath(sort)
-                            .appendQueryParameter(APPID_PARAM, BuildConfig.)
+                            .appendQueryParameter(APPID_PARAM, BuildConfig.OPEN_MOVIE_MAP_API_KEY)
                             .build();
 
             URL url = new URL(builtUri.toString());

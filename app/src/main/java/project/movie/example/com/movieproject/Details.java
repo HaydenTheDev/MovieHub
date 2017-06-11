@@ -19,9 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import project.movie.example.com.movieproject.Settings;
-import project.movie.example.com.movieproject.MovieDetails;
-import project.movie.example.com.movieproject.R;
+
 
 public class Details extends AppCompatActivity {
 

@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    private void makeMovieSearchQuery() {
-
-    }
 
 
     @Override

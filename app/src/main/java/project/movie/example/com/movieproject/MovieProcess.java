@@ -14,7 +14,7 @@ public class MovieProcess {
     public static ArrayList<MovieDetails> getMovieDataFromJson(String movieJsonStr)
             throws JSONException {
 
-        ArrayList<MovieDetails> movieDetalsArrayList = new ArrayList<>();
+        ArrayList<MovieDetails> movieDetailsArrayList = new ArrayList<>();
 
         if (TextUtils.isEmpty(movieJsonStr)) {
             return null;
@@ -52,10 +52,10 @@ public class MovieProcess {
             backdropURL = currentMovie.optString(MY_BACKDROP);
             movieBackdrop = baseURL + backdropURL;
 
-            movieDetalsArrayList.add(new MovieDetails(title, vote_average, moviePoster, overView,
+            movieDetailsArrayList.add(new MovieDetails(title, vote_average, moviePoster, overView,
                     releaseDate, movieBackdrop));
         }
 
-        return movieDetalsArrayList;
+        return movieDetailsArrayList;
     }
 }

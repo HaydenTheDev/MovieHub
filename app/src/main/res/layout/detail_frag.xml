@@ -23,7 +23,7 @@
             android:layout_height="120dp"
             android:orientation="horizontal"
             tools:context=".Details"
-            android:background="#212121">
+            android:background="#343439">
 
             <ImageView
                 android:id="@+id/poster_details"
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/rate_star"/>
+                android:src="@drawable/ic_star"/>
 
             <TextView
                 android:id="@+id/vote_details"

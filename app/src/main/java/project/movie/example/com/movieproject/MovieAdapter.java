@@ -38,6 +38,7 @@ public class MovieAdapter extends ArrayAdapter<MovieDetails> {
             return 0;
     }
 
+
     @Override
     public MovieDetails getItem(int position){
         return movieDetails.get(position);
@@ -62,8 +63,8 @@ public class MovieAdapter extends ArrayAdapter<MovieDetails> {
 
         Picasso.with(getContext())
                 .load(currentMovie.getPosterUrl())
-                .placeholder(R.drawable.pic_load)
-                .error(R.drawable.pic_error)
+                .placeholder(R.drawable.ic_loader)
+                .error(R.drawable.ic_error)
                 .resize(6000, 2000)
                 .onlyScaleDown()
                 .into(posterMovie);

@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import org.json.JSONException;
+import project.movie.example.com.movieproject.MovieProcess;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -49,7 +50,7 @@ public class FetchTask extends AsyncTask<String, Void, ArrayList<MovieDetails>> 
 
 
         try {
-            final String MOVIE_URL = "https://api.themoviedb.org/3/movie/550?";
+            final String MOVIE_URL = "http://api.themoviedb.org/3/movie/";
             final String APPID_PARAM = "api_key";
 
             Uri builtUri =

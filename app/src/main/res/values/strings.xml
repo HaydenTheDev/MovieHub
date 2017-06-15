@@ -14,7 +14,7 @@
 
     <string name="pref_title">List Of Films</string>
     <string name="pref_popular">popular</string>
-    <string name="pref_moviekey">list_of_filmes</string>
+    <string name="pref_moviekey">list_of_films</string>
 
 
     <string name="title_activity_settings">Settings</string>

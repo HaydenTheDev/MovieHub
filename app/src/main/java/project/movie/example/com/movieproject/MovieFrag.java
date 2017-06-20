@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import project.movie.example.com.movieproject.activity.Details;
+
 public class MovieFrag extends Fragment implements AsyncTaskExecutor,
         SharedPreferences.OnSharedPreferenceChangeListener{
 
@@ -86,6 +88,7 @@ public class MovieFrag extends Fragment implements AsyncTaskExecutor,
             FetchTask getTask = new FetchTask(this);
             getTask.execute(order);
         }else{
+
         }
     }
 

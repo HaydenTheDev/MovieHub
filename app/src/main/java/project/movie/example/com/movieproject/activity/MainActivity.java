@@ -1,4 +1,4 @@
-package project.movie.example.com.movieproject;
+package project.movie.example.com.movieproject.activity;
 
 
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import project.movie.example.com.movieproject.MovieFrag;
-import project.movie.example.com.movieproject.FetchTask;
+import project.movie.example.com.movieproject.R;
 
 public class MainActivity extends AppCompatActivity {
 

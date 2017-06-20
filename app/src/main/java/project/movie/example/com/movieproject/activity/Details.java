@@ -1,12 +1,9 @@
-package project.movie.example.com.movieproject;
+package project.movie.example.com.movieproject.activity;
 
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
-import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ShareActionProvider;
@@ -18,8 +15,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import project.movie.example.com.movieproject.MovieDetails;
@@ -43,8 +38,9 @@ public class Details extends AppCompatActivity {
             Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
             setSupportActionBar(myToolbar);
 
-            this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

@@ -3,7 +3,6 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
     </style>
 
     <style name="ActionBarThemeOverlay" parent="">
@@ -11,7 +10,7 @@
         <item name="colorControlNormal">#212121</item>
     </style>
 
-    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    <style name="ActionBarPopupThemeOverlay" parent="AppTheme" >
         <item name="android:background">#FFFFFF</item>
         <item name="android:textColor">#212121</item>
 

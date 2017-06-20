@@ -11,30 +11,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Details"
+        <activity android:name=".activity.Details"
             android:label=""
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.MainActivity">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.movie.example.com.movieproject.MainActivity" />
+                android:value="project.movie.example.com.movieproject.activity.MainActivity" />
         </activity>
         
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".activity.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.movie.example.com.movieproject.MainActivity" />
+                android:value="project.movie.example.com.movieproject.activity.MainActivity" />
         </activity>
     </application>
 

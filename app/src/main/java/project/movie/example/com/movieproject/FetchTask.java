@@ -5,7 +5,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import org.json.JSONException;
-import project.movie.example.com.movieproject.MovieProcess;
+import project.movie.example.com.movieproject.Process.MovieProcess;
 
 import java.io.BufferedReader;
 import java.io.IOException;

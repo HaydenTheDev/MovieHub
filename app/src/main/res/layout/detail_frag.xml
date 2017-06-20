@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:orientation="horizontal"
-            tools:context=".Details"
+            tools:context=".activity.Details"
             android:background="#343439">
 
             <ImageView

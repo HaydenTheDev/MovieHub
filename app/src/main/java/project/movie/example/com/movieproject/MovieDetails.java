@@ -48,7 +48,7 @@ public class MovieDetails  implements Parcelable {
 
 
     public String getTitle() {
-        return title;
+            return title;
     }
 
 

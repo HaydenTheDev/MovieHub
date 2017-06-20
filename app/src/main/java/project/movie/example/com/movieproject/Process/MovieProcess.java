@@ -1,4 +1,4 @@
-package project.movie.example.com.movieproject;
+package project.movie.example.com.movieproject.Process;
 
 
 import android.text.TextUtils;
@@ -8,6 +8,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import project.movie.example.com.movieproject.MovieDetails;
 
 public class MovieProcess {
 

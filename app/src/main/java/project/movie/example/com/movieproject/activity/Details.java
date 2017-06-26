@@ -35,12 +35,9 @@ public class Details extends AppCompatActivity {
                     .add(R.id.container, new DetailFragment())
                     .commit();
 
-            Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-            setSupportActionBar(myToolbar);
 
         }
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
 

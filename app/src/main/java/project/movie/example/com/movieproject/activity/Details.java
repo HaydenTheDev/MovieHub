@@ -38,9 +38,7 @@ public class Details extends AppCompatActivity {
 
         }
 
-
-
-
+        
     }
 
     @Override

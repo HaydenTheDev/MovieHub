@@ -24,11 +24,11 @@ public class MovieProcess {
 
         final String MY_RESULTS = "results";
         final String MY_TITLE = "title";
-        final String MY_VOTE = "vote";
+        final String MY_VOTE_AVERAGE = "vote_average";
         final String MY_POSTER_PATH = "poster_path";
-        final String MY_DESCRIPTION = "description";
+        final String MY_OVERVIEW = "overview";
         final String MY_RELEASE_DATE = "release_date";
-        final String MY_BACKDROP = "backdrop_path";
+        final String MY_BACKDROP_PATH = "backdrop_path";
 
         JSONObject movieJson = new JSONObject(movieJsonStr);
         JSONArray movieArray = movieJson.getJSONArray(MY_RESULTS);
@@ -46,12 +46,12 @@ public class MovieProcess {
             JSONObject currentMovie = movieArray.getJSONObject(i);
 
             String title = currentMovie.optString(MY_TITLE);
-            String vote_average = currentMovie.optString(MY_VOTE);
+            String vote_average = currentMovie.optString(MY_VOTE_AVERAGE);
             posterURL = currentMovie.optString(MY_POSTER_PATH);
             moviePoster = baseURL + posterURL;
-            overView = currentMovie.optString(MY_DESCRIPTION);
+            overView = currentMovie.optString(MY_OVERVIEW);
             releaseDate = currentMovie.optString(MY_RELEASE_DATE);
-            backdropURL = currentMovie.optString(MY_BACKDROP);
+            backdropURL = currentMovie.optString(MY_BACKDROP_PATH);
             movieBackdrop = baseURL + backdropURL;
 
             movieDetailsArrayList.add(new MovieDetails(title, vote_average, moviePoster, overView,
